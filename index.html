@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Minha Página</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body onload="load()">
+        <!--
+        Para ter java script dentro do body html, criar script com todos comandos dentro
+        <script>
+            alert("Meu primeiro JS")
+        </script>
+        <h1> Minha página</h1>
+        -->
+        <h1> Minha página</h1>
+        <button type="button" onclick="clicou()">Clique aqui</button>
+        <h3 id="agradecimento" onclick="redirecionar()"></h3>
+        <!-- unico elemento
+        <p id="mousemove" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui</p>
+        -->
+        <!--para mais de um elemento usamos funções com elemento-->
+        <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>
+        <p onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui</p>   <!--com ou sem id-->
+        <select onchange="funcaochange(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+        
+    </body>
+</html>
